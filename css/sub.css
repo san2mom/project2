@@ -1,0 +1,131 @@
+
+/* 서브상단배경------------------------------------------------------------ */
+
+#sub01-visual{ width: 100%;   background-image:url(../images/bg_sub_01.jpg);
+background-repeat: no-repeat; background-position: center center; height: 316px; background-size:  cover; margin-top: 120px}
+#sub01-visual>.inner>p{color:#fff; font-size: 4rem; padding-top:100px; text-align: center}
+
+
+/* 서브메뉴 리스트------------------------------------------------------------ */
+#submenu_list{width: 100%; height: 700px}
+#submenu_list>.inner{padding-top: 50px }
+#submenu_list>.inner:after{content: ""; display: inline-block; clear: both;}
+#submenu_list>.inner>ul{width: 30%;  float: left; height: 500px;}
+#submenu_list>.inner>ul>li{font-size: 1.6rem;padding: 20px; 
+    border-bottom: 1px solid #ddd;text-align: center}
+
+#submenu_list>.inner>ul>li:hover{background-color: #0e3f97; cursor: pointer}
+#submenu_list>.inner>ul>li:hover a{color: #fff}
+#submenu_list>.inner>ul>li>a:hover{color: #fff; display: inline-block}
+#submenu_list>.inner>ul>.active{background-color: #0e3f97; }
+#submenu_list>.inner>ul>.active>a{color:#fff}
+#submenu_list>.inner>.submenu_list_img{width: 69% ; height: 500px; border: 1px solid #ddd;float: left}
+
+/* 스마트팩토리 소개 ------------------------------------------------------------ */
+
+#procut_smartfactory{width: 100%;   background-image:url(../images/bg_product_smartfactory.JPG);
+    background-repeat: no-repeat; height: 679px;background-position:center center; background-size:  cover;position: relative }
+#procut_smartfactory>.inner{ }
+#procut_smartfactory>.inner>p{font-size:1.8rem; text-align: left;  position:absolute; 
+    left: 45%; top:100px; width: 610px}
+#procut_smartfactory>.inner>p>span{font-size: 2.5rem; font-weight: bold}
+
+/* 스마트팩토리 필요요건 ------------------------------------------------------------ */
+
+#procut_smartfactory_needs{width: 100%; height: 717px;   background-image:url(../images/bg_product_smartfactory02.JPG);
+    background-repeat: no-repeat; background-position:center center; background-size:  cover;}
+.needkeyword{width:  100%; padding-top: 100px}
+.needkeyword:after{content: ""; display: inline-block; clear: both;}
+.needkeyword>li{width: 210px; height: 210px; margin: 0 auto;float: left; background-color: aqua; border-radius: 300px; text-align: center; margin-right: 3.9%; 
+    font-size:2.5rem; color:#fff;position: relative}
+.needkeyword>li>div{position: absolute; left:0; right: 0}
+.needkeyword>li:nth-child(1)>div{top:30%}
+.needkeyword>li:nth-child(2)>div{top:40%}
+.needkeyword>li:nth-child(3)>div{top:40%}
+.needkeyword>li:nth-child(4)>div{top:30%}
+.needkeyword>li:nth-child(5)>div{top:20%}
+.needkeyword>li:nth-child(1){background-color: #ffc50c}
+.needkeyword>li:nth-child(2){background-color: #ffaa00}
+.needkeyword>li:nth-child(3){background-color: #0066ff}
+.needkeyword>li:nth-child(4){background-color: #0047b3}
+.needkeyword>li:nth-child(5){background-color: #0a275a}
+.needkeyword>li:last-child{margin-right: 0}
+
+/* 서브_키워드 ---------------------------------------------------------------- */
+
+#keyword5{width: 100%; margin-top: 50px }
+
+fieldset {
+  background-color:revert;
+  border:1px solid #666;
+  border-radius:10px;
+    font-size: 1.8rem;
+    text-align:center;
+    width: 70%;
+    margin: 0 auto 50px;
+    padding: 20px;
+  
+    
+}
+
+legend {
+ background-color: #fff;
+    border:0px solid #666;
+  color: #000;
+  font-size:2.5rem;
+  padding:5px 20px;
+  font-weight:bold;
+    border-radius:50px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/* 서브_키워드 ---------------------------------------------------------------- */
+
+    
+@media screen and (max-width: 1279px){
+   
+    
+#procut_smartfactory>.inner>p{width: 47.5%}
+    
+    .needkeyword>li{width: 17%; height: 210px; margin: 0 auto;float: left; background-color: aqua; border-radius: 300px; text-align: center; margin-right: 3.5%; 
+    font-size:2.5rem; color:#fff;position: relative}
+
+}
+
+
+
+@media screen and (max-width: 1024px){
+#sub01-visual{ width: 100%;   background-image:url(../images/bg_sub_01.jpg);
+background-repeat: no-repeat; background-position: center center; height: 0px; 
+background-size:  cover; padding-top: calc(316/1024 *100%);position: relative;}
+
+#sub01-visual>.inner>p{color:#fff; font-size: 4rem; left:40%; text-align: center; position: absolute; top:7%}
+ #procut_smartfactory{width: 100%;   background-image:url(../images/s_smartfactory_m_bg.JPG);
+    background-repeat: no-repeat; height: 0px; 
+     padding-top: calc(414/1080 *100%);padding-bottom: calc(414/1080 *100%);background-position:center center; background-size:  cover; }
+    #procut_smartfactory>.inner>p{font-size:1.8rem; text-align: left;  position:absolute; 
+    left: 45%; top:20%; width: 47.5%}
+    
+  
+    #procut_smartfactory_needs{width: 100%; padding-top: calc(717/1920 *0%); height: auto;  background-image:url(../images/bg_product_smartfactory02.JPG);
+    background-repeat: no-repeat; background-position:center center; background-size:  cover;
+    background:none}
+.needkeyword{display: none}
+}
+
+@media screen and (max-width: 768px){
+    html{font-size: 8px}
+#sub01-visual{margin-top: 60px}
+    
+
+}
+
+
+@media screen and (max-width: 500px){
+        #procut_smartfactory>.inner>p{font-size:1.8rem; text-align: left;  position:absolute; 
+    left: 45%; top:20%; width: 47.5%}
+    
+    
+    
+}
+
